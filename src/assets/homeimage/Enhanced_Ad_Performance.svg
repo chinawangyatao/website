@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="31" y="63" width="25" height="25" rx="2" transform="rotate(-90 31 63)" fill="#FDCC50"/>
+<rect x="1" y="33" width="25" height="25" rx="2" transform="rotate(-90 1 33)" fill="#FDCC50"/>
+<rect x="27" y="63" width="26" height="26" rx="2" transform="rotate(180 27 63)" fill="url(#paint0_linear_8058_22331)"/>
+<rect x="30" y="1.00001" width="33" height="33" rx="2" fill="url(#paint1_linear_8058_22331)"/>
+<path d="M52 21L47 12L42 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 46L14 55L9 46" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear_8058_22331" x1="33.5" y1="98.3889" x2="69.6805" y2="86.3337" gradientUnits="userSpaceOnUse">
+<stop offset="0.303004" stop-color="#273266"/>
+<stop offset="1" stop-color="#1656B5"/>
+</linearGradient>
+<linearGradient id="paint1_linear_8058_22331" x1="38.25" y1="45.9167" x2="84.1714" y2="30.6159" gradientUnits="userSpaceOnUse">
+<stop offset="0.303004" stop-color="#273266"/>
+<stop offset="1" stop-color="#1656B5"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script type="text/javascript">
+        window._AMapSecurityConfig = {
+            securityJsCode:"fb5f7145302051e0469d6d2499960bdb",
+        }
+    </script>
+    <script src="https://webapi.amap.com/loader.js"></script>
+    <script type="text/javascript" >
+        AMapLoader.load({
+            key: "44b99d9756309eeeceacd8360ea83a2c",       // 申请好的Web端开发者Key，首次调用 load 时必填
+            version: "2.0",                 // 指定要加载的 JSAPI 的版本，缺省时默认为 1.4.15
+        }).then((AMap)=>{
+            const map = new AMap.Map('containerMap');
+        }).catch((e)=>{
+            console.error(e);  //加载错误提示
+        });
+    </script>
+  </body>
+</html>
