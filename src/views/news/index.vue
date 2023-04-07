@@ -1,7 +1,7 @@
 <template>
   <!--  banner-->
   <div class="mt-16 w-full bgimage flex justify-center items-center animate__animated animate__slideInUp">
-    <div class="w-2/3 flex flex-col items-center">
+    <div class="w-2/3 flex flex-col items-center" data-aos="fade-up">
       <p
         class="text-navy-600 text-5xl font-extrabold text-center leading-tight"
       >
@@ -24,7 +24,7 @@
       <div class="w-full px-10">
         <ul>
           <template v-for="(item, index) in listData" :key="index">
-            <li class="border-b-2 m-5">
+            <li class="border-b-2 m-5" data-aos="fade-up">
               <a href="news" class="flex justify-between">
                 <p>{{ item.title }}</p>
                 <p>{{ item.time }}</p>
@@ -34,7 +34,7 @@
         </ul>
         <p class="text-right m-5 text-blue-900 font-bold cursor-pointer hover:text-navy-400">查看更多 ></p>
       </div>
-      <div>
+      <div data-aos="fade-up">
         <img src="https://picsum.photos/seed/picsum/600/600" />
       </div>
     </div>

@@ -1,7 +1,8 @@
 <template>
   <!--  banner-->
   <div class="mt-16 w-full bgimage flex justify-center items-center animate__animated animate__slideInUp">
-    <div class="w-2/3 flex flex-col items-center">
+    <div class="w-2/3 flex flex-col items-center"
+         data-aos="fade-up">
       <p
           class="text-navy-600 text-5xl font-extrabold text-center leading-tight"
       >
@@ -19,11 +20,11 @@
   </div>
 <!--  内容-->
   <div class=" bg-navy-100 border" style="height: 1200px">
-    <div class="flex flex-col items-center justify-center content-center p-20 ">
-      <div class="w-full h-96 bg-white m-5 rounded-xl shadow-elementBox" style="height: 600px"><maps/></div>
+    <div class="flex flex-col items-center justify-center content-center p-20 "  data-aos="fade-up">
+      <div class="w-full h-96 bg-white m-10 rounded-xl " style="height: 600px"><maps/></div>
 <!--      <div class="w-1/2 h-96 bg-black m-5"></div>-->
     </div>
-    <div class="container mx-auto flex">
+    <div class="container mx-auto flex"  data-aos="fade-up">
       <div class="w-1/2 "><img src="https://picsum.photos/600/300"></div>
       <div class="w-1/2 p-10 font-bold text-xl">
         <div class="my-5"><span>公司名称 : 青岛微梦创新科技有限公司</span></div>

@@ -1,13 +1,13 @@
 <template>
-soulution
+  <div>
+
+  </div>
 </template>
 
-<script>
-export default {
-  name: "index"
-}
+<script setup>
+
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

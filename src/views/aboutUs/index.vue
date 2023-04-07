@@ -1,7 +1,9 @@
 <template>
   <!--  banner-->
-  <div class="mt-16 w-full bgimage flex justify-center items-center animate__animated animate__slideInUp">
-    <div class="w-2/3 flex flex-col items-center">
+  <div
+    class="mt-16 w-full bgimage flex justify-center items-center animate__animated animate__slideInUp"
+  >
+    <div class="w-2/3 flex flex-col items-center" data-aos="fade-up">
       <p
         class="text-navy-600 text-5xl span-extrabold text-center leading-tight"
       >
@@ -19,7 +21,10 @@
   </div>
 
   <!-- 我们的资源 -->
-  <div class="w-full bg-navy-100 border animate__animated animate__slideInLeft" style="height: 800px">
+  <div
+    class="w-full bg-navy-100 border animate__animated animate__slideInLeft"
+    style="height: 800px"
+  >
     <div>
       <h2 class="text-5xl text-navy-600 span-bold p-20 font-bold">
         我们的资源
@@ -32,6 +37,7 @@
           target="_blank"
           rel="noreferrer"
           class="group sm:px-6 px-4 py-6 transition-colors bg-white border border-gray-200 rounded"
+          data-aos="fade-up"
           ><h4 class="ck-h6-new group-hover:text-indigo-600 mb-2">
             <span style="vertical-align: inherit"
               ><span style="vertical-align: inherit"
@@ -63,6 +69,7 @@
               ></path></svg></span
         ></a>
         <a
+          data-aos="fade-up"
           href="https://www.martechcube.com/clearbit-builds-new-integration-to-support-g2-buyer-intent-data/"
           target="_blank"
           rel="noreferrer"
@@ -98,6 +105,7 @@
               ></path></svg></span
         ></a>
         <a
+          data-aos="fade-up"
           href="https://www.demandgenreport.com/features/news-briefs/clearbit-reveals-partnership-with-g2-designed-to-enhance-pipeline-discovery-capture"
           target="_blank"
           rel="noreferrer"
@@ -133,6 +141,7 @@
               ></path></svg></span
         ></a>
         <a
+          data-aos="fade-up"
           href="https://www.destinationcrm.com/Articles/CRM-News/CRM-Across-the-Wire/Clearbit-Partners-with-G2-155997.aspx"
           target="_blank"
           rel="noreferrer"
@@ -168,6 +177,7 @@
               ></path></svg></span
         ></a>
         <a
+          data-aos="fade-up"
           href="https://www.demandgenreport.com/features/news-briefs/clearbit-releases-new-feature-to-help-marketing-teams-instantly-access-high-intent-buyers"
           target="_blank"
           rel="noreferrer"
@@ -203,6 +213,7 @@
               ></path></svg></span
         ></a>
         <a
+          data-aos="fade-up"
           href="https://martechseries.com/sales-marketing/b2b-commerce/clearbit-unlocks-high-quality-pipeline-directly-from-b2b-websites/"
           target="_blank"
           rel="noreferrer"
@@ -238,6 +249,7 @@
               ></path></svg></span
         ></a>
         <a
+          data-aos="fade-up"
           href="https://www.destinationcrm.com/Articles/CRM-News/CRM-Across-the-Wire/Clearbit-Launches-Capture-155419.aspx"
           target="_blank"
           rel="noreferrer"
@@ -273,6 +285,7 @@
               ></path></svg></span
         ></a>
         <a
+          data-aos="fade-up"
           href="https://www.destinationcrm.com/Articles/CRM-News/CRM-Across-the-Wire/Clearbit-Integrates-with-LeanData-154822.aspx"
           target="_blank"
           rel="noreferrer"
@@ -308,6 +321,7 @@
               ></path></svg></span
         ></a>
         <a
+          data-aos="fade-up"
           href="https://martechvibe.com/news/clearbit-adds-data-activation-platform-for-creating-demand-capturing-intent/"
           target="_blank"
           rel="noreferrer"
@@ -347,86 +361,105 @@
   </div>
 
   <!--  背景时间表-->
-  <div >
+  <div>
     <div>
       <h2 class="text-5xl text-navy-600 span-bold p-20 font-bold">
         背景故事和时间表
       </h2>
-      <div class="container mx-auto flex">
-        <div class="w-2/5 text-gray-500 font-light">
+      <div class="container mx-auto flex"
+           data-aos="fade-up">
+        <div class="w-2/5 text-gray-500 font-light" data-aos="fade-up">
           <span>
-            凭借在 Stripe、Twitter、Google 和 Heroku 的背景，Clearbit 的创始人齐聚一堂，改变了陈腐、僵化的企业数据世界，并创建了对创新至关重要的优质基础设施。
-            <br>
-            <br>
+            凭借在 Stripe、Twitter、Google 和 Heroku 的背景，Clearbit
+            的创始人齐聚一堂，改变了陈腐、僵化的企业数据世界，并创建了对创新至关重要的优质基础设施。
+            <br />
+            <br />
 
-我们通过基于实时数据运行的产品帮助现代企业发展，以最大限度地提高获取、转换和运营效率。如今，Clearbit 为超过 1,500 家 B2B SaaS 公司提供支持，包括 Asana、Segment 和 Atlassian。
-    <br>
-            <br>
-我们的第一个产品 Enrichment 用软件开发人员喜欢使用的业务数据 API 取代了手动 CSV 的世界。然后，我们为销售团队推出了 Prospector 来建立他们的业务簿，并为营销人员推出了 Reveal 去匿名化网站流量。不久之后，我们将注意力转向了合作伙伴，发布了与 Segment、Zapier、Salesforce、Marketo、HubSpot、Drift 和 Intercom 的集成。
-    <br>
-            <br>
-看到创新公司如何利用我们的 API 来构建加速收入和简化运营的自动化，我们决定为每个 B2B 公司普及这些进入市场的增长工具。Clearbit 的数据激活平台现在是营销人员和销售人员日常工作流程的重要组成部分，无需工程资源即可创造需求、转换意图和优化渠道。
-    <br>
-            <br>
-我们在旧金山设有办事处，是一家远程优先的公司，员工遍布世界各地。
+            我们通过基于实时数据运行的产品帮助现代企业发展，以最大限度地提高获取、转换和运营效率。如今，Clearbit
+            为超过 1,500 家 B2B SaaS 公司提供支持，包括 Asana、Segment 和
+            Atlassian。
+            <br />
+            <br />
+            我们的第一个产品 Enrichment 用软件开发人员喜欢使用的业务数据 API
+            取代了手动 CSV 的世界。然后，我们为销售团队推出了 Prospector
+            来建立他们的业务簿，并为营销人员推出了 Reveal
+            去匿名化网站流量。不久之后，我们将注意力转向了合作伙伴，发布了与
+            Segment、Zapier、Salesforce、Marketo、HubSpot、Drift 和 Intercom
+            的集成。
+            <br />
+            <br />
+            看到创新公司如何利用我们的 API
+            来构建加速收入和简化运营的自动化，我们决定为每个 B2B
+            公司普及这些进入市场的增长工具。Clearbit
+            的数据激活平台现在是营销人员和销售人员日常工作流程的重要组成部分，无需工程资源即可创造需求、转换意图和优化渠道。
+            <br />
+            <br />
+            我们在旧金山设有办事处，是一家远程优先的公司，员工遍布世界各地。
           </span>
         </div>
         <div class="ml-10">
           <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
-            <div class="flex md:contents">
+            <div class="flex md:contents" data-aos="fade-up">
               <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-navy-500 pointer-events-none"></div>
                 </div>
-                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-navy-500 shadow text-center">
+                <div
+                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-navy-500 shadow text-center"
+                >
                   <i class="fas fa-check-circle text-white"></i>
                 </div>
               </div>
-              <div class="bg-navy-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+              <div
+                class="bg-navy-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+              >
                 <h3 class="font-semibold text-lg mb-1">公司成立</h3>
-                <p class="text-sm">主要业务板块是移动互联网，主要业务板块是移动互联网，主要业务板块是移动互联网，主要业务板块是移动互联网主要业务板块是移动互联网</p>
-                <p class="leading-tight text-justify w-full">
-                  2020-11-20
+                <p class="text-sm">
+                  主要业务板块是移动互联网，主要业务板块是移动互联网，主要业务板块是移动互联网，主要业务板块是移动互联网主要业务板块是移动互联网
                 </p>
+                <p class="leading-tight text-justify w-full">2020-11-20</p>
               </div>
             </div>
-            <div class="flex md:contents">
+            <div class="flex md:contents" data-aos="fade-up">
               <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-navy-500 pointer-events-none"></div>
                 </div>
-                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-navy-500 shadow text-center">
+                <div
+                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-navy-500 shadow text-center"
+                >
                   <i class="fas fa-check-circle text-white"></i>
                 </div>
               </div>
-              <div class="bg-navy-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+              <div
+                class="bg-navy-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+              >
                 <h3 class="font-semibold text-lg mb-1">事业部成立</h3>
                 <p class="text-sm">主要业务板块是移动互联网</p>
-                <p class="leading-tight text-justify">
-                  2021-8-10
-                </p>
+                <p class="leading-tight text-justify">2021-8-10</p>
               </div>
             </div>
-            <div class="flex md:contents">
+            <div class="flex md:contents" data-aos="fade-up">
               <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-red-500 pointer-events-none"></div>
                 </div>
-                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-red-500 shadow text-center">
+                <div
+                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-red-500 shadow text-center"
+                >
                   <i class="fas fa-times-circle text-white"></i>
                 </div>
               </div>
-              <div class="bg-red-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+              <div
+                class="bg-red-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+              >
                 <h3 class="font-semibold text-lg mb-1 text-gray-50">现在</h3>
-                <p class="leading-tight text-justify">
-                  我们在这里
-                </p>
+                <p class="leading-tight text-justify">我们在这里</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>

@@ -2,7 +2,9 @@
 
   <transition name="fade">
     <div
-        class="  fixed z-50 my-3 container mx-auto element-shadow lg:rounded-2xl absolute z-[1000] top-[4.875rem] origin-top opacity-100 scale-100 visible shadow-elementBox bg-white"
+        class="fixed z-50 my-3 container mx-auto element-shadow lg:rounded-2xl
+        absolute top-[4.875rem] origin-top opacity-100 scale-100 visible shadow-elementBox bg-white
+        w-2/3"
         v-if="modelValue"
 
         v-bind="$attrs"

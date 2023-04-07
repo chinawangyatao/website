@@ -1,6 +1,9 @@
 <template>
-  <div class=" container mx-auto mt-10 animate__animated animate__fadeInUp">
-    <div class="bg-home-image bg-no-repeat bg-center" style="height: 500px">
+  <div class=" container mx-auto mt-10">
+    <div class=" bg-home-image bg-no-repeat bg-center"
+         style="height: 500px"
+         data-aos="fade-up"
+    >
       <div
         class="w-1/3 text-navy-600 text-5xl flex flex-col mx-auto py-10 font-bold text-left bg-home-image2 bg-no-repeat bg-left-top"
       >
@@ -23,7 +26,7 @@
         </p>
       </div>
       <div class="flex">
-        <div class="shadow-elementBox w-1/2 p-10 m-10 rounded-3xl">
+        <div class="shadow-elementBox w-1/2 p-10 m-10 rounded-3xl" data-aos="fade-up">
           <ul class="text-left text-2xl">
             <li>传统山型增长曲线</li>
             <li class="text-lg py-5 text-navy-300 font-extralight">
@@ -35,7 +38,7 @@
             </li>
           </ul>
         </div>
-        <div class="shadow-elementBox w-1/2 p-10 m-10 rounded-3xl">
+        <div class="shadow-elementBox w-1/2 p-10 m-10 rounded-3xl" data-aos="fade-up">
           <ul class="text-left text-2xl">
             <li>数字化时代新增长曲线</li>
             <li class="text-lg py-5 text-navy-300 font-extralight">
@@ -52,8 +55,8 @@
     <!--    模块三-->
     <div class="my-16 text-center font-bold text-4xl text-navy-600">
       <div>微梦创新打造 "一条流程两个业务模式"</div>
-      <div class="flex m-10 pb-10">
-        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5">
+      <div class="flex m-10 pb-10" data-aos="fade-up">
+        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5"  data-aos="fade-up">
           <div class="rounded-3xl p-10 flex flex-col items-center">
           <img :src="kaifa" />
             <p class="text-2xl my-5">快速开发搭建</p>
@@ -62,7 +65,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5">
+        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5"  data-aos="fade-up">
           <div class="rounded-3xl p-10 flex flex-col items-center">
             <img :src="ai2" />
             <p class="text-2xl my-5">AI人工智能数据整理</p>
@@ -71,7 +74,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5">
+        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5" data-aos="fade-up">
           <div class="rounded-3xl p-10 flex flex-col items-center">
             <img :src="jingzhun" />
             <p class="text-2xl my-5">精准锁定目标受众</p>
@@ -82,7 +85,7 @@
         </div>
       </div>
       <div class="flex m-10 pb-10">
-        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5">
+        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5"  data-aos="fade-up">
           <div class="rounded-3xl p-10 flex flex-col items-center">
             <img :src="renqun" />
             <p class="text-2xl my-5">精致的服务</p>
@@ -91,7 +94,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5">
+        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5"  data-aos="fade-up">
           <div class="rounded-3xl p-10 flex flex-col items-center">
             <img :src="yewu" />
             <p class="text-2xl my-5">多种业务组合</p>
@@ -100,7 +103,7 @@
             </p>
           </div>
         </div>
-        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5">
+        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5"  data-aos="fade-up">
           <div class="rounded-3xl p-10 flex flex-col items-center">
             <img :src="shouru" />
             <p class="text-2xl my-5">更稳定的收入</p>
@@ -122,7 +125,7 @@
         微梦创新创立之初就决定始终服务于客户，对于项目的利润对上下游客户可见，从而促使微梦创新以技术创造收益的商业模式；<br />认认真真服务于自己的每一个客户。
       </div>
       <div class="flex">
-        <div class="text-lg w-1/3 px-5">
+        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
           <img
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
             :src="shangxiayou"
@@ -132,7 +135,7 @@
             微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
           </p>
         </div>
-        <div class="text-lg w-1/3 px-5">
+        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
           <img
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
             :src="gongkai"
@@ -142,7 +145,7 @@
             微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
           </p>
         </div>
-        <div class="text-lg w-1/3 px-5">
+        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
           <img
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
             :src="kecha"
@@ -164,7 +167,7 @@
             微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
           </p>
         </div>
-        <div class="text-lg w-1/3 px-5">
+        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
           <img
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
             :src="gongkai"
@@ -174,7 +177,7 @@
             微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
           </p>
         </div>
-        <div class="text-lg w-1/3 px-5">
+        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
           <img
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
             :src="kecha"
@@ -186,7 +189,7 @@
         </div>
       </div>
       <div class="flex my-10">
-        <div class="text-lg w-1/3 px-5">
+        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
           <img
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
             :src="shangxiayou"
@@ -196,7 +199,7 @@
             微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
           </p>
         </div>
-        <div class="text-lg w-1/3 px-5">
+        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
           <img
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
             :src="gongkai"
@@ -206,7 +209,7 @@
             微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
           </p>
         </div>
-        <div class="text-lg w-1/3 px-5">
+        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
           <img
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
             :src="kecha"
@@ -218,7 +221,6 @@
         </div>
       </div>
     </div>
-
     <!--  模块五  -->
     <div class="container flex">
       <div
@@ -226,6 +228,7 @@
       >
         <div
           class="contact-component relative bg-gray-0 min-h-[30rem] border border-gray-200 rounded flex flex-col pt-10 pb-6 px-6 md:px-10 lg:px-12 max-w-xl"
+          data-aos="fade-up"
         >
           <form>
             <header class="text-[#2C303E] text-center">
@@ -503,7 +506,8 @@
           </div>
         </div>
       </div>
-      <img class="w-2/3 shadow-elementBox" :src="wechart" />
+      <div class="w-2/3 shadow-elementBox" data-aos="fade-right"><img  :src="wechart" /></div>
+
     </div>
   </div>
 </template>
@@ -523,6 +527,9 @@ import ai2 from "../../assets/homeimage/ai2.png";
 import jingzhun from "../../assets/homeimage/jingzhun.png";
 import digitization1 from "../../assets/homeimage/4_digitization1.png";
 import tradition1 from "../../assets/homeimage/4_tradition1.png";
+import {nextTick, onMounted} from "vue";
+import WOW from "wowjs"
+
 </script>
 
 <style scoped>
