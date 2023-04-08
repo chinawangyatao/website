@@ -12,9 +12,11 @@ module.exports = {
         gray: colors.trueGray,
         red: colors.rose,
         blue: colors.sky,
-        yellow: colors.amber,
+        yellow: colors.yellow,
         white:colors.white,
         purple:colors.purple,
+        purpleTitle:"#5924d9",
+        yellowTitle:"#f39800",
         navy:{
           0: "#f2f6fa",
           100: "#dde8f4",

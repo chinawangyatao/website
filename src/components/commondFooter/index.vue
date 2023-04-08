@@ -5,6 +5,7 @@
   >
     <div
         class="main-container pb-11 md:pb-16 md:flex flex-wrap items-start pt-16"
+        data-aos="fade-up"
     >
       <div class="flex items-center md:w-4/12 md:pr-10 lg:w-1/4 mb-12">
         <img class="ml-16 w-10" :src="logo">

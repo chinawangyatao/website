@@ -52,6 +52,27 @@
         </div>
       </div>
     </div>
+
+    <div class="my-16 text-center font-bold text-4xl text-navy-600">
+      <div data-aos="fade-up">做营销推广、做设计、做项目开发的痛点？</div>
+    <div class="flex py-10" data-aos="fade-up">
+      <div class="w-1/2 "><img :src="tongdian"></div>
+      <div>
+        <ul>
+          <template v-for="(item,index) in listTitle" :key="index">
+            <li data-aos="fade-up" class="h-12 w-full  bg-opacity-70 m-5 rounded-3xl text-left px-5 shadow-inner hover:shadow-xl transform hover:translate-y-6 duration-300 cursor-pointer "
+                :class="index%2===0?'bg-purpleTitle':'bg-yellowTitle'">
+              <span class="align-middle text-xl font-bold cursor-pointer text-gray-50 text-white"
+
+             >{{item.title}}</span>
+            </li>
+          </template>
+
+        </ul>
+      </div>
+    </div>
+    </div>
+
     <!--    模块三-->
     <div class="my-16 text-center font-bold text-4xl text-navy-600">
       <div>微梦创新打造 "一条流程两个业务模式"</div>
@@ -70,27 +91,27 @@
             <img :src="ai2" />
             <p class="text-2xl my-5">AI人工智能数据整理</p>
             <p class="text-lg">
-              我们可以快速搭建营销项目、小程序项目、极大的节省客户时间成本、并且抢占商机
+              将AI人工智能技术融入项目中，更快的获取行业数据并分析，锁定用户痛点，获取人群画像
             </p>
           </div>
         </div>
         <div class="w-1/3 shadow-elementBox rounded-3xl mx-5" data-aos="fade-up">
           <div class="rounded-3xl p-10 flex flex-col items-center">
             <img :src="jingzhun" />
-            <p class="text-2xl my-5">精准锁定目标受众</p>
+            <p class="text-2xl my-5">数据分析</p>
             <p class="text-lg">
-              我们可以快速搭建营销项目、小程序项目、极大的节省客户时间成本、并且抢占商机
+              对大数据进行清洗后得到行业数据，总结或预测流量动向，及时调整降低获客成本
             </p>
           </div>
         </div>
       </div>
       <div class="flex m-10 pb-10">
-        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5"  data-aos="fade-up">
-          <div class="rounded-3xl p-10 flex flex-col items-center">
+        <div class="w-1/3 shadow-elementBox rounded-3xl mx-5 "  data-aos="fade-up">
+          <div class="rounded-3xl p-10 flex flex-col items-center pt-16">
             <img :src="renqun" />
-            <p class="text-2xl my-5">精致的服务</p>
+            <p class="text-2xl my-5">安全稳定的服务</p>
             <p class="text-lg">
-              我们可以快速搭建营销项目、小程序项目、极大的节省客户时间成本、并且抢占商机
+              注重客户的行业数据安全，不会向同类目泄露相关数据和行业隐私，服务透明，受行业监督
             </p>
           </div>
         </div>
@@ -99,7 +120,7 @@
             <img :src="yewu" />
             <p class="text-2xl my-5">多种业务组合</p>
             <p class="text-lg">
-              我们可以快速搭建营销项目、小程序项目、极大的节省客户时间成本、并且抢占商机
+              以整合营销的方式，将小程序、网站、付费流量整合到自有平台上来，让回头客的成本为0
             </p>
           </div>
         </div>
@@ -108,7 +129,7 @@
             <img :src="shouru" />
             <p class="text-2xl my-5">更稳定的收入</p>
             <p class="text-lg">
-              我们可以快速搭建营销项目、小程序项目、极大的节省客户时间成本、并且抢占商机
+              让商家更加专注于产品，扩大品牌效力，让"回头客"更多
             </p>
           </div>
         </div>
@@ -118,11 +139,11 @@
 <!--    <div><chart></chart></div>-->
     <!--    模块四-->
     <div
-      class="my-16 text-center font-bold text-4xl text-navy-600 bg-home-image2 bg-no-repeat bg-center bg-cover"
+      class="py-14 text-center font-bold text-4xl text-navy-600 bg-home-image2 bg-no-repeat bg-center bg-cover"
     >
       <div>微梦创新的服务</div>
       <div class="font-extralight text-lg my-10">
-        微梦创新创立之初就决定始终服务于客户，对于项目的利润对上下游客户可见，从而促使微梦创新以技术创造收益的商业模式；<br />认认真真服务于自己的每一个客户。
+        微梦创新创立之初就决定，<span class="underline">用专业的知识服务于客户</span>，因为项目的利润对上下游客户可见，从而促使微梦创新以技术创造收益的商业模式；<br />认认真真服务于自己的每一个客户。
       </div>
       <div class="flex">
         <div class="text-lg w-1/3 px-5" data-aos="fade-up">
@@ -140,9 +161,9 @@
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
             :src="gongkai"
           />
-          <p class="my-5">服务公开透明</p>
+          <p class="my-5">公开透明</p>
           <p class="font-extralight">
-            微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
+            微梦创新的利润对任何客户公开，受客户的监督；并对项目技术点也向客户公开，促使企业用技术服务创造收益
           </p>
         </div>
         <div class="text-lg w-1/3 px-5" data-aos="fade-up">
@@ -152,39 +173,7 @@
           />
           <p class="my-5">服务可查</p>
           <p class="font-extralight">
-            微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
-          </p>
-        </div>
-      </div>
-      <div class="flex my-10">
-        <div class="text-lg w-1/3 px-5">
-          <img
-            class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
-            :src="shangxiayou"
-          />
-          <p class="my-5">服务于上下游</p>
-          <p class="font-extralight">
-            微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
-          </p>
-        </div>
-        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
-          <img
-            class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
-            :src="gongkai"
-          />
-          <p class="my-5">服务公开透明</p>
-          <p class="font-extralight">
-            微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
-          </p>
-        </div>
-        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
-          <img
-            class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
-            :src="kecha"
-          />
-          <p class="my-5">服务可查</p>
-          <p class="font-extralight">
-            微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
+            微梦创新会对每一个客户建立专属的档案，任何环节的服务细节都有迹可查
           </p>
         </div>
       </div>
@@ -192,37 +181,59 @@
         <div class="text-lg w-1/3 px-5" data-aos="fade-up">
           <img
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
-            :src="shangxiayou"
+            :src="Advanced_Segmentation"
           />
-          <p class="my-5">服务于上下游</p>
+          <p class="my-5">技术优先</p>
           <p class="font-extralight">
-            微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
+            微梦创新的的业务部每2周会向技术部提出新建设性需求，每3周技术部会将新的需求落地，随后经过验证和测试后，业务软件和服务随即更新
           </p>
         </div>
         <div class="text-lg w-1/3 px-5" data-aos="fade-up">
           <img
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
-            :src="gongkai"
+            :src="Enriched_Accounts___Contacts"
           />
-          <p class="my-5">服务公开透明</p>
+          <p class="my-5">服务优先</p>
           <p class="font-extralight">
-            微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
+            微梦创新坚信专业的知识是服务客户的根本，每周都有相关部门对客户需求进行回访跟踪，解决问题
           </p>
         </div>
         <div class="text-lg w-1/3 px-5" data-aos="fade-up">
           <img
             class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
-            :src="kecha"
+            :src="Optimized_Web_Forms"
           />
-          <p class="my-5">服务可查</p>
+          <p class="my-5">分享优先</p>
           <p class="font-extralight">
-            微梦创新是一家软件服务商，因此有自己的上下游，微梦创新不仅对自己客户负责更会对上下游负责
+            微梦创新会定期与客户分享一些技术、运营经验，以便更好的做好技术服务
+          </p>
+        </div>
+      </div>
+      <div class="flex my-10">
+        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
+          <img
+            class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
+            :src="Precise_B2B_Ad_Targeting"
+          />
+          <p class="my-5">营销服务</p>
+          <p class="font-extralight">
+            微梦创新为了提供更合适的营销服务，业务部人员会在客户驻厂两周，实地学习和体验相关产品的买卖过程，以便为线上营销方案的制定明确思路
+          </p>
+        </div>
+        <div class="text-lg w-1/3 px-5" data-aos="fade-up">
+          <img
+            class="shadow-elementBox p-10 rounded-2xl mx-auto bg-white"
+            :src="Instant_Sales_Alerts"
+          />
+          <p class="my-5">技术外包服务</p>
+          <p class="font-extralight">
+            微梦创新目前只提供技术外包服务，会根据客户的明确需求制定详细的开发可行性报告，开发过程中完善相关接口文档和功能维护手册，大幅度降低客户后期维护成本
           </p>
         </div>
       </div>
     </div>
     <!--  模块五  -->
-    <div class="container flex">
+    <div class="container flex pt-10">
       <div
         class="rounded-2xl element-shadow-3 md:order-1 md:mx-0 max-w-xl p-4 mx-auto bg-white"
       >
@@ -524,12 +535,26 @@ import renqun from "../../assets/homeimage/renqun.png";
 import yewu from "../../assets/homeimage/yewu.png";
 import kaifa from "../../assets/homeimage/kaifa.png";
 import ai2 from "../../assets/homeimage/ai2.png";
+import Advanced_Segmentation from "../../assets/homeimage/Advanced_Segmentation.svg";
+import Enriched_Accounts___Contacts from "../../assets/homeimage/Enriched_Accounts___Contacts.svg";
+import Optimized_Web_Forms from "../../assets/homeimage/Optimized_Web_Forms.svg";
+import Precise_B2B_Ad_Targeting from "../../assets/homeimage/Precise_B2B_Ad_Targeting.svg";
+import Instant_Sales_Alerts from "../../assets/homeimage/Instant_Sales_Alerts.svg";
 import jingzhun from "../../assets/homeimage/jingzhun.png";
+import tongdian from "../../assets/homeimage/tongdian.png";
 import digitization1 from "../../assets/homeimage/4_digitization1.png";
 import tradition1 from "../../assets/homeimage/4_tradition1.png";
-import {nextTick, onMounted} from "vue";
-import WOW from "wowjs"
 
+
+const listTitle=[
+  {title:"渠道有限客户少，获客难度大，流量不精准？"},
+  {title:"企业转型推广难，传统行业不懂网络营销，效果难把控？"},
+  {title:"网络推广效果差市场竞争激励，销量难打开？"},
+  {title:"盲目投放成本高担心费用不可控，怕花冤枉钱？"},
+  {title:"做小程序价格高，用模版满足不了需求？"},
+  {title:"公司做项目，项目人手不够？再招员工人力成本高？"},
+  {title:"想打造自己的专属官网，不知道如何入手？"},
+]
 </script>
 
 <style scoped>
