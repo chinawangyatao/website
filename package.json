@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite  --host ",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -29,6 +29,7 @@
     "autoprefixer": "^9.8.8",
     "node-sass": "^8.0.0",
     "postcss": "^7.0.39",
+    "requirejs": "^2.3.6",
     "sass": "^1.60.0",
     "sass-loader": "^13.2.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",

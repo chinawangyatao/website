@@ -30,78 +30,77 @@ const routes = [
     },
   },
   {
+    path: "/miniProgram",
+    name: "miniProgram",
+    component: () => import("../views/miniProgram/index.vue"),
+    meta: {
+      title: "小程序",
+    },
+  },
+  {
+    path: "/website",
+    name: "website",
+    component: () => import("../views/website/index.vue"),
+    meta: {
+      title: "官网",
+    },
+  },
+  {
+    path: "/promotion",
+    name: "promotion",
+    component: () => import("../views/promotion/index.vue"),
+    meta: {
+      title: "竞价推广服务",
+    },
+  },
+  {
+    path: "/informationFlow",
+    name: "informationFlow",
+    component: () => import("../views/informationFlow/index.vue"),
+    meta: {
+      title: "信息流推广",
+    },
+  },
+  {
+    path: "/advertisingDesign",
+    name: "advertisingDesign",
+    component: () => import("../views/advertisingDesign/index.vue"),
+    meta: {
+      title: "广告设计",
+    },
+  },
+  {
+    path: "/printing",
+    name: "printing",
+    component: () => import("../views/printing/index.vue"),
+    meta: {
+      title: "印刷服务",
+    },
+  },
+  {
+    path: "/agentOperation",
+    name: "agentOperation",
+    component: () => import("../views/agentOperation/index.vue"),
+    meta: {
+      title: "代运营",
+    },
+  },
+  {
+    path: "/omnichannelHosting",
+    name: "omnichannelHosting",
+    component: () => import("../views/omnichannelHosting/index.vue"),
+    meta: {
+      title: "全渠道",
+    },
+  },
+  {
     path: "/solution",
     name: "solution",
     component: () => import("@/views/solution/index.vue"),
     meta: {
       title: "解决方案",
     },
-    children: [
-      {
-        path: "/miniProgram",
-        name: "miniProgram",
-        component: () => import("../views/miniProgram/index.vue"),
-        meta: {
-          title: "小程序",
-        },
-      },
-      {
-        path: "/website",
-        name: "website",
-        component: () => import("../views/website/index.vue"),
-        meta: {
-          title: "官网",
-        },
-      },
-      {
-        path: "/promotion",
-        name: "promotion",
-        component: () => import("../views/promotion/index.vue"),
-        meta: {
-          title: "竞价推广服务",
-        },
-      },
-      {
-        path: "/informationFlow",
-        name: "informationFlow",
-        component: () => import("../views/informationFlow/index.vue"),
-        meta: {
-          title: "信息流推广",
-        },
-      },
-      {
-        path: "/advertisingDesign",
-        name: "advertisingDesign",
-        component: () => import("../views/advertisingDesign/index.vue"),
-        meta: {
-          title: "广告设计",
-        },
-      },
-      {
-        path: "/printing",
-        name: "printing",
-        component: () => import("../views/printing/index.vue"),
-        meta: {
-          title: "印刷服务",
-        },
-      },
-      {
-        path: "/agentOperation",
-        name: "agentOperation",
-        component: () => import("../views/agentOperation/index.vue"),
-        meta: {
-          title: "代运营",
-        },
-      },
-      {
-        path: "/omnichannelHosting",
-        name: "omnichannelHosting",
-        component: () => import("../views/omnichannelHosting/index.vue"),
-        meta: {
-          title: "全渠道",
-        },
-      },
-    ],
+    children: [],
   },
   {
     path: "/aboutUs",
@@ -136,6 +135,7 @@ router.beforeResolve(async (to) => {});
 
 // 全局后置钩子
 router.afterEach((to, from, failure) => {
+  window.scrollTo(0, 0);
   // if (!failure) sendToAnalytics(to.fullPath)
 });
 export default router;

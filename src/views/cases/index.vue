@@ -1,11 +1,12 @@
 <template>
 <!--  banner-->
-<div class="mt-16 w-full bgimage flex justify-center items-center animate__animated animate__slideInUp">
-  <div class="w-2/3 flex flex-col items-center" >
-    <p class="text-navy-600 text-5xl font-extrabold text-center leading-tight" data-aos="fade-up">了解 B2B 公司如何通过 <br> 微梦创新服务 <br> 更快地发展</p>
-    <p class="text-blue-900 text-2xl text-center my-10" data-aos="fade-up">加入成千上万依靠 微梦创新 发现、吸引和转化他们最有价值的客户的公司。</p>
-    <button class="cursor-pointer ck-button-new ck-button-new--bold--blue" data-aos="fade-up">联系我们</button>
+<div class="mt-16 w-full bg-bg-banner1 bgimage flex justify-center items-center animate__animated animate__slideInUp">
+  <div class="w-2/3 flex flex-col p-20" >
+    <p class="text-navy-600 text-5xl font-extrabold leading-tight" data-aos="fade-up">了解 B2B 公司如何通过 <br> 微梦创新服务 <br> 更快地发展</p>
+    <p class="text-blue-900 text-2xl my-10" data-aos="fade-up">加入成千上万依靠 微梦创新 发现、吸引和转化他们最有价值的客户的公司。</p>
+    <button class="w-1/5 cursor-pointer ck-button-new ck-button-new--bold--blue" data-aos="fade-up">联系我们</button>
   </div>
+  <div class="px-5 w-1/2 relative top-16 right-16 transform-gpu origin-center rotateImage duration-500" data-aos="fade-left"><img :src="caseBanner"></div>
 </div>
 <div class="container mx-auto">
 <!--  案例-->
@@ -32,11 +33,15 @@
     <h1 class="text-navy-700 text-center font-bold text-2xl">案例展示</h1>
     <div class="flex flex-wrap">
       <template v-for="(item,index) in caseList" :key="index">
-        <div class="w-96 mt-5 p-5" data-aos="fade-up">
-          <img class="rounded-xl shadow-2xl" src="https://picsum.photos/500/700">
+        <div class="w-96 mt-5 p-5 cursor-pointer" data-aos="fade-up" @click="openShow">
+          <img class="rounded-xl shadow-2xl" :src="item.picture">
           <p class="text-center mt-5 text-blue-900 font-extrabold">{{ item.title }}</p>
         </div>
       </template>
+
+<!--        <homePopup class="container mx-auto" :modelValue="show" >123</homePopup>-->
+
+
     </div>
 
   </div>
@@ -45,33 +50,69 @@
 </template>
 
 <script setup>
+import popupimage from "./popupimage/index.vue";
+import caseBanner from "../../assets/casesimage/case-banner.png"
+import canyinye from "../../assets/casesimage/canyinye.png"
+import zhizaoye from "../../assets/casesimage/zhizaoye.jpg"
+import nongye from "../../assets/casesimage/nongye.jpg"
+import jiankangzixun from "../../assets/casesimage/jiankangzixun.jpg"
+import huagong from "../../assets/casesimage/huagong.jpg"
+import wujin from "../../assets/casesimage/wujin.jpg"
+import {ref} from "vue";
 const caseList=[
   {
-    title:"《餐饮业》"
+    title:"《餐饮业》",
+    picture:canyinye,
   },
   {
-    title: "《制造业》"
+    title: "《制造业》",
+    picture:zhizaoye,
   },
   {
-    title: "《农业》"
+    title: "《农业》",
+    picture:nongye,
   },
   {
-    title: "《医疗行业》"
+    title: "《健康咨询》",
+    picture:jiankangzixun,
   },
   {
-    title: "《化工行业》"
+    title: "《化工行业》",
+    picture:huagong,
   },
   {
-    title: "《机械行业》"
+    title: "《机械行业》",
+    picture:wujin,
   },
 ]
+
+const show = ref(false)
+const openShow = ()=>{
+  console.log(show.value)
+  show.value = !show.value
+}
 </script>
 
 <style scoped>
+.rotateImage:hover{
+animation: rotateImage 1.5s ;
+  animation-iteration-count:1
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotateY(0deg)
+  }
+  to {
+    transform: rotateY(360deg)
+  }
+}
+
+
 .bgimage{
   height: 750px;
-  background: url("https://picsum.photos/seed/picsum/1920/600") no-repeat;
-  background-size: cover;
+  //background: url("https://picsum.photos/seed/picsum/1920/600") no-repeat;
+  //background-size: cover;
 }
 .ck-button-new {
   position: relative;

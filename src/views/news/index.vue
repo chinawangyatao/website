@@ -1,21 +1,12 @@
 <template>
   <!--  banner-->
-  <div class="mt-16 w-full bgimage flex justify-center items-center animate__animated animate__slideInUp">
-    <div class="w-2/3 flex flex-col items-center" data-aos="fade-up">
-      <p
-        class="text-navy-600 text-5xl font-extrabold text-center leading-tight"
-      >
-        了解 B2B 公司如何通过 <br />
-        微梦创新服务 <br />
-        更快地发展
-      </p>
-      <p class="text-blue-900 text-2xl text-center my-10">
-        加入成千上万依靠 微梦创新 发现、吸引和转化他们最有价值的客户的公司。
-      </p>
-      <button class="cursor-pointer ck-button-new ck-button-new--bold--blue">
-        联系我们
-      </button>
+  <div class="mt-16 w-full bg-bg-banner1 bgimage flex justify-center items-center animate__animated animate__slideInUp">
+    <div class="w-2/3 flex flex-col p-20" >
+      <p class="text-navy-600 text-5xl font-extrabold leading-tight" data-aos="fade-up">了解 B2B 公司如何通过 <br> 微梦创新服务 <br> 更快地发展</p>
+      <p class="text-blue-900 text-2xl my-10" data-aos="fade-up">加入成千上万依靠 微梦创新 发现、吸引和转化他们最有价值的客户的公司。</p>
+      <button class="w-1/5 cursor-pointer ck-button-new ck-button-new--bold--blue" data-aos="fade-up">联系我们</button>
     </div>
+    <div class="px-5 w-1/2 relative top-16 right-16 transform-gpu origin-center  duration-500" data-aos="fade-left"><img class="imageRight" :src="news"></div>
   </div>
   <div class="container mx-auto animate__animated animate__slideInLeft">
     <!--  案例-->
@@ -32,7 +23,7 @@
             </li>
           </template>
         </ul>
-        <p class="text-right m-5 text-blue-900 font-bold cursor-pointer hover:text-navy-400">查看更多 ></p>
+        <p class="text-right m-5 text-blue-900 font-bold cursor-pointer hover:text-navy-400" data-aos="fade-up">查看更多 ></p>
       </div>
       <div data-aos="fade-up">
         <img src="https://picsum.photos/seed/picsum/600/600" />
@@ -42,6 +33,7 @@
 </template>
 
 <script setup>
+import news from "../../assets/newsimage/news.png"
 const listData = [
   {
     title: "中国首次星地高速相干激光通信试验成功秒速达5GB",
@@ -79,10 +71,26 @@ const listData = [
 </script>
 
 <style scoped>
+.rotateImage:hover{
+  animation: rotateImage 1.5s ;
+  animation-iteration-count:1
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotateY(0deg)
+  }
+  to {
+    transform: rotateY(360deg)
+  }
+}
+.imageRight{
+  width: 500px;
+}
 .bgimage {
   height: 750px;
-  background: url("https://picsum.photos/seed/picsum/1920/600") no-repeat;
-  background-size: cover;
+  //background: url("https://picsum.photos/seed/picsum/1920/600") no-repeat;
+  //background-size: cover;
 }
 .ck-button-new {
   position: relative;

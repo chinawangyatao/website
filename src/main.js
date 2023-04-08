@@ -11,7 +11,7 @@ const appAOS = new AOS.init({
   easing: "ease-in-out",
   duration: 1500,
   anchor: "center-center",
-  delay: 500,
+  delay: 300,
 });
 const app = createApp(App);
 app.use(appAOS);

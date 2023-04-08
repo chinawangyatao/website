@@ -32,14 +32,19 @@
 import {useVModel} from "@vueuse/core";
 import {ref} from "vue";
 
-defineProps({
+const props = defineProps({
   modelValue:{
     type:Boolean
 
   }
 })
 
-// const isOpen =useVModel(props)
+const isOpen =useVModel(props)
+
+const isClose=()=>{
+  props.modelValue.value = false
+  // console.log(isOpen.value)
+  }
 </script>
 
 <style scoped>
