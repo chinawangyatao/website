@@ -24,14 +24,22 @@
     </div>
   </div>
 
+  <div class="container mx-auto text-center pt-10" data-aos="fade-up">
+    <h1 class="text-3xl">推广的重要性</h1>
+    <span class="text-gray-500">我们正在经历一个"酒香也怕巷子深的年代"</span>
+  </div>
 
+  <div class="container mx-auto text-gray-500 mt-10 text-xl leading-8" data-aos="fade-up">
+    <span>盲目性的推广钱花了不少了，为什么还是生意一般或者盈利清淡呢？对于很多小卖家而言那些烧钱的推广也花不起，而且更不见实际效果。以至于对网商的经营快失去了信心。为什么呢？究其原因，关键在于没有针对性的推广，我们的推广是有针对性的，
+      这样商品更容易形成集群效应。推广就是以最便宜的价格引来最有效的流量，最有效的流量不仅仅是多少个流量可以成交多少单，更是你自然搜素流量的增长，给平销带来的权重，要以一个整体、全局、规划性的思考方式去推广。</span>
+    <div>
 
+    </div>
+  </div>
 </template>
 
-<script>
-export default {
-  name: "index"
-}
+<script setup>
+
 </script>
 
 <style scoped>

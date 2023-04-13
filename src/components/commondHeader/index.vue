@@ -65,7 +65,7 @@
           </ul>
         </li>
         <li>
-          <span class="titleTwo">全托管模式</span>
+          <span class="titleTwo">AR/VR技术</span>
           <ul class="my-2">
             <li class="mt-5 font-medium" @click="()=>show=false">
               <span>代运营</span>
