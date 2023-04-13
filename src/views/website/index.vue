@@ -23,6 +23,7 @@
       </button>
     </div>
   </div>
+
 <div class="container mx-auto text-center p-20">
   <h1 class="text-3xl">支持不同场景，提供高效服务</h1>
   <span class="text-gray-500">全场景覆盖，提供快速高效的网站建设服务</span>
@@ -115,22 +116,157 @@
       </li>
     </ul>
   </div>
+
+
+  <div class="container mx-auto text-center pt-10" data-aos="fade-up">
+    <h1 class="text-3xl">系统稳定性高，安全可靠</h1>
+    <span class="text-gray-500">全自主知识产权，多行业验证，稳定可靠</span>
+  </div>
+  <div class="container mx-auto">
+    <div>
+      <img :src="AB_bg">
+    </div>
+  </div>
+<div class="container mx-auto flex justify-between px-32" style="position: relative;
+    top: -450px;">
+  <div>
+    <ul>
+      <li class="bgImage_14" data-aos="fade-up">
+        <div class="w-60 relative top-8 left-8">
+          <h1 class="mb-0.5 text-right">7*24小时安全监控</h1>
+          <div class="text-gray-500 text-sm text-right">全天候安全监控、告警服务</div>
+        </div>
+      </li>
+      <li class="bgImage_15" data-aos="fade-up">
+        <div class="w-60 relative top-8 left-8">
+          <h1 class="mb-0.5 text-right">golang架构支持高并发</h1>
+          <div class="text-gray-500 text-sm text-right">并提供DNS、CC攻击等多重防护</div>
+        </div>
+      </li>
+      <li class="bgImage_16" data-aos="fade-up">
+        <div class="w-60 relative top-8 left-8">
+          <h1 class="mb-0.5 text-right">系统稳定性高</h1>
+          <div class="text-gray-500 text-sm text-right">拒绝第三方模版，自主产权，稳定性高</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li class="bgImage_11" data-aos="fade-up">
+        <div class="w-60 relative top-8 left-28">
+          <h1 class="mb-0.5 ">平均每周技术更新200次+</h1>
+          <span class="text-gray-500 text-sm pr-10">技术团队，持续更新，快速响应</span>
+        </div>
+      </li>
+      <li class="bgImage_12" data-aos="fade-up">
+        <div class="w-60 relative top-8 left-28">
+          <h1 class="mb-0.5 ">全面支持IPV6</h1>
+          <span class="text-gray-500 text-sm pr-10">响应国家政策，全面支持</span>
+        </div>
+      </li>
+      <li class="bgImage_13" data-aos="fade-up">
+        <div class="w-60 relative top-8 left-28">
+          <h1 class="mb-0.5 ">网站数据加密</h1>
+          <span class="text-gray-500 text-sm pr-10">数据加密、自动备份</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  <div class="AB_image_2" data-aos="fade-up">
+    <div class="container mx-auto text-center pt-10 text-white" data-aos="fade-up">
+      <h1 class="text-3xl">专业服务团队 全方位服务保障</h1>
+      <span>专业服务团队 答疑解惑专业指导</span>
+    </div>
+    <ul class="flex justify-center" data-aos="fade-up">
+      <li class="AB_iamge_17 flex flex-col items-center">
+        <h1 class="text-center mb-2 text-xl mt-44">专业客服团队</h1>
+        <p class="text-gray-500 w-52 text-center">7*24小时一对一客服专业指导，答疑解惑</p>
+      </li>
+      <li class="AB_iamge_18 flex flex-col items-center">
+        <h1 class="text-center mb-2 text-xl mt-44">专业运用持续更新</h1>
+        <p class="text-gray-500 w-52 text-center">专业团队运营，沉淀行业经验，持续更新功能</p>
+      </li>
+      <li class="AB_iamge_19 flex flex-col items-center">
+        <h1 class="text-center mb-2 text-xl mt-44">专业数据</h1>
+        <p class="text-gray-500 w-52 text-center">AI辅助数据分析，精准锁定目标用户</p>
+      </li>
+      <li class="AB_iamge_20 flex flex-col items-center">
+        <h1 class="text-center mb-2 text-xl mt-44">7天无条件退款</h1>
+        <p class="text-gray-500 w-52 text-center">7天无条件退款，产品使用放心，消费有保障</p>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script setup>
-import xinixfabu from "../../assets/website/AB1.png";
-import zhanshiguanwang from "../../assets/website/AB10.png";
-const ABList = [
-  {
-    title: "展示官网",
-    text: "精美的企业官网形象展示设计",
-    icon: zhanshiguanwang,
-  },
-  { title: "信息发布", text: "轻松发布新闻动态、行业咨询等", icon: xinixfabu },
-];
+import AB_11 from "../../assets/website/AB_11.png"
+import AB_bg from "../../assets/website/AB_bg.png"
 </script>
 
 <style scoped>
+.AB_iamge_17{
+  background: url("../../assets/website/AB_17.png");
+  width: 274px;
+  height: 342px;
+}.AB_iamge_18{
+  background: url("../../assets/website/AB_18.png");
+  width: 274px;
+  height: 342px;
+}.AB_iamge_19{
+  background: url("../../assets/website/AB_19.png");
+  width: 274px;
+  height: 342px;
+}.AB_iamge_20{
+  background: url("../../assets/website/AB_20.png");
+  width: 274px;
+  height: 342px;
+}
+.AB_image_2{
+  height: 237px;
+  background: url("../../assets/website/AB_bg_2.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -350px;
+}
+.bgImage_11{
+  width: 382px;
+  height: 142px;
+  background: url("../../assets/website/AB_11.png") no-repeat;
+}
+.bgImage_12{
+  width: 382px;
+  height: 142px;
+  background: url("../../assets/website/AB_12.png") no-repeat;
+}
+.bgImage_13{
+  width: 382px;
+  height: 142px;
+  background: url("../../assets/website/AB_13.png") no-repeat;
+}
+.bgImage_14{
+  width: 382px;
+  height: 142px;
+  background: url("../../assets/website/AB_14.png") no-repeat;
+}
+.bgImage_15{
+  width: 382px;
+  height: 142px;
+  background: url("../../assets/website/AB_15.png") no-repeat;
+}
+.bgImage_16{
+  width: 382px;
+  height: 142px;
+  background: url("../../assets/website/AB_16.png") no-repeat;
+}
+.bg-wending{
+  height: 700px;
+  background: url("../../assets/website/AB_bg.png") no-repeat;
+  background-size: cover;
+}
 .image_1 {
   background: url("../../assets/website/AB10.png") no-repeat;
   width: 424px;
