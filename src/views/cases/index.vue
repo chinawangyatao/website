@@ -31,7 +31,7 @@
 <!-- 案例展示 -->
   <div>
     <h1 class="text-navy-700 text-center font-bold text-2xl">案例展示</h1>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap justify-center">
       <template v-for="(item,index) in caseList" :key="index">
         <div class="w-96 mt-5 p-5 cursor-pointer" data-aos="fade-up" @click="openShow">
           <img class="rounded-xl shadow-2xl" :src="item.picture">
