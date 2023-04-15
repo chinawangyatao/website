@@ -13,14 +13,14 @@
           </div>
       </a>
       </li>
-      <li class="underLine"><router-link to="/">首页</router-link></li>
-      <li class="underLine cursor-pointer">
+      <li class="underLine" @click="changeUnderLine(0)" :class="active==0?'underLineActive duration-300':''"><router-link to="/">首页</router-link></li>
+      <li class="underLine cursor-pointer" @click="changeUnderLine(5)" :class="active==5?'underLineActive duration-500':''">
         <div @click="showEvent">解决方案</div>
       </li>
-      <li class="underLine"><router-link to="cases">案例</router-link></li>
-      <li class="underLine"><router-link to="news">新闻</router-link></li>
-      <li class="underLine"><router-link to="aboutUs">关于我们</router-link></li>
-      <li class="underLine"><router-link to="contact">联系我们</router-link></li>
+      <li class="underLine" @click="changeUnderLine(1)" :class="active==1?'underLineActive duration-500':''"><router-link to="cases">案例</router-link></li>
+      <li class="underLine" @click="changeUnderLine(2)" :class="active==2?'underLineActive duration-500':''"><router-link to="news">新闻</router-link></li>
+      <li class="underLine" @click="changeUnderLine(3)" :class="active==3?'underLineActive duration-500':''"><router-link to="aboutUs">关于我们</router-link></li>
+      <li class="underLine" @click="changeUnderLine(4)" :class="active==4?'underLineActive duration-500':''"><router-link to="contact">联系我们</router-link></li>
     </ul>
 <!--    弹框下拉框-->
     <homePopup :modelValue = "show">
@@ -99,6 +99,11 @@ const isScroll = ref(false)
 const scrollEvent=()=>{
   isScroll.value = true
 }
+const active = ref(0)
+const changeUnderLine=(val)=>{
+  active.value = val
+
+}
 </script>
 
 <style scoped>
@@ -108,7 +113,18 @@ const scrollEvent=()=>{
   text-decoration: none;
   font-size: 20px;
 }
-
+.underLineActive{
+  background-image:  linear-gradient(
+      43.5deg,
+      #38bdf8 -9.3%,
+      #38bdf8 23.22%,
+      #637eff 46.1%,
+      #2563eb 84.13%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .underLine:before {
   content: "";
   position: absolute;
